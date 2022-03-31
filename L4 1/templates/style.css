@@ -1,0 +1,16 @@
+* {margin: 0; padding: 0;}
+body {padding: 10px;}
+ul {list-style-type: none;}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 40px;
+}
+.item {padding: 20px; border: 1px solid black;}
+
+.colored {background-color: cyan;}
+.colored1 {background-color: yellow;}
+
+button {padding: 10px 20px;}
+

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8" />
+	<title>
+	{% if title %}
+		{{ title }}
+	{% else %}
+		Flask Brython titte not exist
+	{% endif %}
+	</title>
+	<script type="text/javascript" src="brython.js" ></script>
+	<script type="text/javascript" src="brython_stdlib.js"></script>
+
+	<script type="text/python" src='feathures.py'></script>
+
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" href="style.css" /> 
+</head>
+<body onload="brython();">
+<div id="main" class="container">
+	<div class="item item1">Block 1</div>
+	<div class="item item2">Block 2</div>
+	<div class="item item3">Block 3</div>
+</div>
+<div id="for-buttons" class="container">
+	<button id="btn-1">1</button>
+	<button id="btn-2">2</button>
+	<button id="btn-3">3</button>
+</div>
+<div id="for-input" class="container">
+	<input type="text" />
+</div>
+<br>
+<ul>
+{% for m in menu %}
+<li>{{m}}</li>
+{% endfor %}
+</ul>
+
+
+</body>
+</html>

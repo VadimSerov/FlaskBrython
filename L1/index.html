@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8" />
+	<title>Brython L1</title>
+<!--
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.5/brython.js" ></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.5/brython_stdlib.js"></script>
+-->
+	<script type="text/javascript" src="brython.js" ></script>
+	<script type="text/javascript" src="brython_stdlib.js"></script>
+
+	<script type="text/python" src='feathures.py'></script>
+
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" href="style.css" /> 
+<!--
+<style>
+* {margin: 0; padding: 0;}
+body {padding: 10px;}
+ul {list-style-type: none;}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 40px;
+}
+.item {padding: 20px; border: 1px solid black;}
+
+.colored {background-color: cyan;}
+.colored1 {background-color: yellow;}
+
+button {padding: 10px 20px;}
+</style>
+-->
+</head>
+<body onload="brython();">
+<div id="main" class="container">
+	<div class="item item1">Block 1</div>
+	<div class="item item2">Block 2</div>
+	<div class="item item3">Block 3</div>
+</div>
+<div id="for-buttons" class="container">
+	<button id="btn-1">1</button>
+	<button id="btn-2">2</button>
+	<button id="btn-3">3</button>
+</div>
+<div id="for-input" class="container">
+	<input type="text" />
+</div>
+</body>
+</html>

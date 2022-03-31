@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8" />
+	<title>
+	{% block title -%}
+	{% if title %}
+		{{ title }}
+	{% else %}
+		Flask Brython titte not exist
+	{% endif %}
+	{% endblock %}
+	</title>
+	<script type="text/javascript" src="http://localhost:4000/templates/brython.js" ></script>
+	<script type="text/javascript" src="http://localhost:4000/templates/brython_stdlib.js"></script>
+
+	<script type="text/python" src='http://localhost:4000/templates/feathures.py'></script>
+
+	<link rel="icon" type="image/png" href="http://localhost:4000/templates/favicon.png" />
+<!-- 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+	<link rel="stylesheet" href="http://localhost:4000/static/css/style.css">
+<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+</head>
+<body onload="brython();">
+{% block content -%}
+	{%- block mainmenu -%}
+		<ul>
+		{% for m in menu %}
+			<li>{{m}}</li>
+		{% endfor -%}
+		</ul>
+	{% endblock mainmenu -%}
+	<hr>
+{% endblock %}
+</body>
+</html>
